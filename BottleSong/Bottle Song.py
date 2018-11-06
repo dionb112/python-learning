@@ -1,13 +1,4 @@
-
-# coding: utf-8
-bottles = 99
-
-for bottles > 0:
-    print bottles
-# In[1]:
-
-
-# My First Python Project
+# My First Python Mini Project
 bottle_message = "bottles of beer."
 for bottles in range(99, 0, -1):
     print(bottles, bottle_message, 'on the wall.')
@@ -21,7 +12,4 @@ for bottles in range(99, 0, -1):
         print("No more bottles of beer on the wall.")
     else:
         print(bottles, bottle_message, ' on the wall.')
-    print()
-
-        
-
+    print()    

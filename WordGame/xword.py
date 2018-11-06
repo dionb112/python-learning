@@ -1,3 +1,4 @@
+# Begin first full python project by learning how to load words from text file
 with open('/usr/share/dict/words') as wordsf:
     words = wordsf.readlines()
 
