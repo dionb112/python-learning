@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+        <ol>
+            Word Game.
+        </ol>
+
+        <form action='/processform' method='POST'>
+            <table border="1">
+                <tr>
+                    <td>Guess Seven Words from this word: </td>
+                    <td><input type="text" name="guesses"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="GO"></td>
+                </tr>
+
+            </table>
+        </form>
+{% endblock %}  
