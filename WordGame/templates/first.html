@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 
 {% block the_body %}
-        <ol>
-            Word Game.
-        </ol>
-        <h1>{{ source_word }}</h1>
+        <h2>Word Game.</h2>
+        <ol>Rules:</ol>    
+        <ol>1. each word is made up from letters contained within the source word</ol>    
+        <ol>2. each word is a “real” word</ol>    
+        <ol>3. the words all have three letters or more</ol>    
+        <ol>4. there are no duplicates</ol>    
+        <ol>5. none of the seven submitted words is the source word.</ol>    
+
+        <h1>Source word: {{ source_word }}</h1>
 
         <form action='/processform' method='POST'>
             <table border="1">
                 <tr>
-                    <td>Guess Seven Words from this word: </td>
+                    <td>Seperate each word with a single space: </td>
                     <td><input type="text" name="guesses"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="GO"></td>
+                    <td><input type="submit" value="SUBMIT"></td>
                 </tr>
 
             </table>
